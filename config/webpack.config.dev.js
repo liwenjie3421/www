@@ -241,7 +241,7 @@ module.exports = {
             loader: require.resolve('less-loader'),
             options: {
               modifyVars: {
-                '@primary-color': '#000'
+                '@primary-color': '#108ee9'
               }
             }
           }

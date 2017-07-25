@@ -2,6 +2,8 @@ import './app.less';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import LeftNav from './components/leftNav.react.js';
+
 class App extends Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class App extends Component {
           </div>
         </div>
         <div className="container">
+          <LeftNav />
           {this.props.children}
         </div>
         <div className="footer">
