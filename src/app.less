@@ -1,0 +1,49 @@
+@base-color: #FF6100;
+@top-bar-height: 50px;
+@bottom-bar-height: 40px;
+@default-fontsize: 12px;
+@default-fontcolor: #fff;
+@icon-height: 38px;
+@icon-width: 38px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: @top-bar-height;
+  background-color: @base-color;
+  color: @default-fontcolor;
+  line-height: @top-bar-height;
+  img {
+    position: absolute;
+    left: 30px;
+    top: (@top-bar-height - @icon-height) / 2;
+    width: @icon-width;
+    height: @icon-height;
+  }
+  span {
+    position: relative;
+    left: 80px;
+    height: @top-bar-height;
+    line-height: @top-bar-height;
+  }
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: @top-bar-height - 10px;
+  background-color: @base-color;
+  color: @default-fontcolor;
+  line-height: @top-bar-height - 10px;
+  text-align: center;
+}
+
+
+
+.container {
+  margin-top: 50px;
+}
