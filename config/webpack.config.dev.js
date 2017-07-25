@@ -78,7 +78,7 @@ module.exports = {
     // We placed these paths second because we want `node_modules` to "win" if
     // there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
-    modules: ['node_modules', paths.appNodeModules].concat(
+    modules: [ 'node_modules', paths.appNodeModules ].concat(
     // It is guaranteed to exist because we tweak it in `env.js`
     process.env.NODE_PATH.split(path.delimiter).filter(Boolean)),
     // These are the reasonable defaults supported by the Node ecosystem. We also
@@ -169,12 +169,12 @@ module.exports = {
         loader: require.resolve('babel-loader'),
         options: {
           presets: [
-            "es2015", "react", "stage-1"
+            'es2015', 'react', 'stage-1'
           ],
           plugins: [
-            "transform-runtime",
-            "add-module-exports",
-            "transform-decorators-legacy",
+            'transform-runtime',
+            'add-module-exports',
+            'transform-decorators-legacy',
             [
               'import', {
                 libraryName: 'antd',
@@ -241,7 +241,7 @@ module.exports = {
             loader: require.resolve('less-loader'),
             options: {
               modifyVars: {
-                "@primary-color": "#000"
+                '@primary-color': '#000'
               }
             }
           }
@@ -258,7 +258,7 @@ module.exports = {
     // string.
     new InterpolateHtmlPlugin(env.raw),
     // Generates an `index.html` file with the <script> injected.
-    new HtmlWebpackPlugin({inject: true, template: paths.appHtml}),
+    new HtmlWebpackPlugin({ inject: true, template: paths.appHtml }),
     // Add module names to factory functions so they appear in browser profiler.
     new webpack.NamedModulesPlugin(),
     // Makes some environment variables available to the JS code, for example: if
